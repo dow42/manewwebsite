@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+</head>
+
+<body>
+
+<h2>Login</h2>
+
+<input id="email" placeholder="Email"><br><br>
+
+<input id="pass" type="password" placeholder="Password"><br><br>
+
+<button onclick="login()">Login</button>
+
+<p id="msg"></p>
+
+<script>
+
+function login(){
+
+var email=document.getElementById("email").value;
+var pass=document.getElementById("pass").value;
+
+if(email=="admin@gmail.com" && pass=="1234"){
+
+window.location="profile.html";
+
+}else{
+
+document.getElementById("msg").innerHTML="Wrong login";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
